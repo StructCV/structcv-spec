@@ -1,0 +1,32 @@
+name: Validate Schemas
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Use Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18.x'
+    
+    - name: Install dependencies
+      run: npm ci
+    
+    - name: Validate examples
+      run: npm test
+    
+    - name: Check schema format
+      run: |
+        for schema in schemas/*/structcv.schema.json; do
+          echo "Checking $schema"
+          npx ajv compile -s "$schema" --strict=true
+        done

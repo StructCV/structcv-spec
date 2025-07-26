@@ -1,0 +1,8 @@
+{
+    "specVersion": "0.1.0",
+    "meta": { "language": "fr-FR", "country": "FR", "lastModified": "2025-07-26T12:00:00Z" },
+    "basics": { "lastName": "Dupont", "firstName": "Jeanne", "email": "jeanne@example.com" },
+    "experience": [
+      { "position": "Software Engineer", "company": "Acme", "startDate": "2023-03", "current": true }
+    ]
+  }

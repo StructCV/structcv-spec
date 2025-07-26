@@ -1,0 +1,35 @@
+{
+  "name": "@structcv/structcv-spec",
+  "version": "0.1.0",
+  "description": "Official JSON Schema for StructCV resume standard",
+  "main": "index.js",
+  "files": [
+    "schemas/",
+    "index.js",
+    "index.d.ts"
+  ],
+  "scripts": {
+    "test": "node scripts/validate-examples.js",
+    "docs": "node scripts/generate-docs.js",
+    "check-versions": "node scripts/check-versions.js",
+    "prepare": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StructCV/structcv-schema.git"
+  },
+  "keywords": [
+    "structcv",
+    "resume",
+    "cv",
+    "schema",
+    "json-schema"
+  ],
+  "author": "StructCV",
+  "license": "MIT",
+  "devDependencies": {
+    "ajv": "^8.12.0",
+    "ajv-formats": "^2.1.1",
+    "chalk": "^4.1.2"
+  }
+}

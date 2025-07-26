@@ -1,0 +1,10 @@
+{
+    "domains": {
+      "resume": {
+        "latest": "0.1.0",
+        "versions": {
+          "0.1.0": "https://<A_REMPLACER_PLUS_TARD>/resume/v0.1/schema.json"
+        }
+      }
+    }
+  }
