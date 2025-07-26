@@ -1,0 +1,43 @@
+name: Validate JSON Schema
+
+on:
+  push:
+    paths:
+      - 'schemas/**/*.json'
+  pull_request:
+    paths:
+      - 'schemas/**/*.json'
+
+jobs:
+  validate-schema:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+        
+    - name: Install dependencies
+      run: npm ci
+      
+    - name: Validate schema structure
+      run: npm run validate-schema
+      
+    - name: Validate examples against schema
+      run: npm test
+      
+    - name: Alternative AJV validation (if needed)
+      run: |
+        # Install AJV CLI globally
+        npm install -g ajv-cli
+        
+        # Validate each schema
+        for schema in schemas/*/structcv.schema.json; do
+          echo "Validating $schema"
+          ajv compile -s "$schema" --strict=true
+        done 

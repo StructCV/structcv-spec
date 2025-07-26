@@ -10,6 +10,8 @@
   ],
   "scripts": {
     "test": "node scripts/validate-examples.js",
+    "validate": "node scripts/validate-examples.js",
+    "validate-schema": "node scripts/validate-schema.js",
     "docs": "node scripts/generate-docs.js",
     "check-versions": "node scripts/check-versions.js",
     "prepare": "npm test"
