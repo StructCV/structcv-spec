@@ -1,0 +1,18 @@
+{
+  "specVersion": "0.2.0",
+  "meta": {},
+  "profile": {
+    "basics": {
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "john.doe@example.com"
+    },
+    "experience": [
+      {
+        "position": "Developer",
+        "company": "Tech Corp",
+        "startDate": "2020-01"
+      }
+    ]
+  }
+}

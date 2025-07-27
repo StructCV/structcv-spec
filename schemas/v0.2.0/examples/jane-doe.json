@@ -1,0 +1,133 @@
+{
+  "specVersion": "0.2.0",
+  "meta": {
+    "canonical": "https://janedoe.dev/cv.json",
+    "lastModified": "2025-07-26T12:00:00Z",
+    "language": "en-US",
+    "country": "US"
+  },
+  "profile": {
+    "basics": {
+      "lastName": "Doe",
+      "firstName": "Jane",
+      "label": "Senior Software Engineer",
+      "pronouns": "she/her",
+      "title": "Full Stack Developer",
+      "email": "jane.doe@example.com",
+      "phone": "+1234567890",
+      "url": "https://janedoe.dev",
+      "summary": "Experienced full stack developer specialized in modern web applications and cloud solutions.",
+      "location": {
+        "city": "San Francisco",
+        "region": "CA",
+        "country": "US"
+      },
+      "profiles": [
+        {
+          "network": "LinkedIn",
+          "username": "janedoe",
+          "url": "https://linkedin.com/in/janedoe"
+        },
+        {
+          "network": "GitHub",
+          "username": "janedoe",
+          "url": "https://github.com/janedoe"
+        }
+      ]
+    },
+
+    "experience": [
+      {
+        "position": "Lead Software Engineer",
+        "company": "TechCorp Inc.",
+        "contractType": "Full-time",
+        "startDate": "2021-06",
+        "endDate": "2025-07",
+        "current": true,
+        "location": {
+          "city": "San Francisco",
+          "country": "US"
+        },
+        "summary": "Leading a team of developers for building scalable web applications.",
+        "highlights": [
+          "Architected and implemented microservices architecture",
+          "Improved application performance by 50%"
+        ],
+        "labels": ["leadership", "fullstack"],
+        "projects": [
+          {
+            "name": "TechCorp Dashboard",
+            "description": "A cloud-based management dashboard.",
+            "url": "https://dashboard.techcorp.com"
+          }
+        ]
+      }
+    ],
+
+    "education": [
+      {
+        "institution": "University of Technology",
+        "area": "Computer Science",
+        "studyType": "Bachelor",
+        "startDate": "2013-09",
+        "endDate": "2017-06"
+      }
+    ],
+
+    "skills": [
+      {
+        "name": "JavaScript",
+        "level": "Expert",
+        "keywords": ["Node.js", "React", "Vue"]
+      },
+      {
+        "name": "Cloud Computing",
+        "level": "Advanced",
+        "keywords": ["AWS", "Docker", "Kubernetes"]
+      }
+    ],
+
+    "languages": [
+      { "code": "en", "fluency": "native" },
+      { "code": "fr", "fluency": "C1" }
+    ],
+
+    "awards": [
+      {
+        "title": "Developer of the Year",
+        "date": "2022-12",
+        "awarder": "Tech Awards",
+        "summary": "Awarded for excellence in software development."
+      }
+    ],
+
+    "certificates": [
+      {
+        "name": "Certified Kubernetes Administrator",
+        "issuer": "CNCF",
+        "date": "2023-01",
+        "url": "https://example.com/certificate/123456"
+      }
+    ],
+
+    "publications": [
+      {
+        "name": "Scalable Web Architectures",
+        "publisher": "TechPress",
+        "releaseDate": "2024-05",
+        "url": "https://example.com/publication/987654",
+        "summary": "Book on designing scalable web systems."
+      }
+    ],
+
+    "volunteer": [
+      {
+        "position": "Technical Advisor",
+        "company": "Code4Good",
+        "startDate": "2020-01",
+        "endDate": "2021-12",
+        "summary": "Provided technical guidance to non-profit projects."
+      }
+    ]
+  }
+}

@@ -2,7 +2,7 @@ const Ajv = require('ajv');
 const addFormats = require('ajv-formats');
 const fs = require('fs');
 const path = require('path');
-const chalk = require('chalk');
+const chalk = require('chalk').default || require('chalk');
 
 const ajv = new Ajv({ 
   strict: true, 

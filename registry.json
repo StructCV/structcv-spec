@@ -1,10 +1,14 @@
 {
-    "domains": {
-      "resume": {
-        "latest": "0.1.0",
-        "versions": {
-          "0.1.0": "https://<A_REMPLACER_PLUS_TARD>/resume/v0.1/schema.json"
-        }
-      }
+  "latest": "v0.2.0",
+  "versions": ["v0.1.0", "v0.2.0"],
+  "schemas": {
+    "v0.1.0": {
+      "path": "schemas/v0.1.0/structcv.schema.json",
+      "metadata": "schemas/v0.1.0/metadata.json"
+    },
+    "v0.2.0": {
+      "path": "schemas/v0.2.0/structcv.schema.json",
+      "metadata": "schemas/v0.2.0/metadata.json"
     }
   }
+}

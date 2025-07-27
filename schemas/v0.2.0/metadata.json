@@ -1,0 +1,8 @@
+{
+  "version": "0.2.0",
+  "status": "stable",
+  "releaseDate": "2025-07-27",
+  "deprecated": false,
+  "deprecationMessage": null,
+  "changelog": "Major restructuring: moved all profile data under 'profile' object for better organization and API consistency. Breaking change from v0.1.0."
+}

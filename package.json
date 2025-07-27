@@ -1,12 +1,10 @@
 {
   "name": "@structcv/structcv-spec",
-  "version": "0.1.1",
-  "description": "Official JSON Schema for StructCV resume standard",
-  "main": "index.js",
+  "version": "0.2.0",
+  "description": "Official JSON Schema specification for StructCV resume standard - Pure JSON, multi-language compatible",
   "files": [
     "schemas/",
-    "index.js",
-    "index.d.ts"
+    "registry.json"
   ],
   "scripts": {
     "test": "node scripts/validate-examples.js",
