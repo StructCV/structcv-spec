@@ -1,4 +1,5 @@
 {
+    "$schema": "https://structcv.github.io/structcv-spec/schemas/v0.1.0/structcv.schema.json",
     "specVersion": "0.1.0",
     "meta": { "language": "fr-FR", "country": "FR", "lastModified": "2025-07-26T12:00:00Z" },
     "basics": { "lastName": "Dupont", "firstName": "Jeanne", "email": "jeanne@example.com" },

@@ -1,12 +1,13 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://<url_to_replace>/schema/v0.2/structcv.schema.json",
+  "$id": "https://structcv.github.io/structcv-spec/schemas/v0.2.0/structcv.schema.json",
   "title": "StructCV Schema",
   "description": "Official JSON Schema for StructCV structured resume standard (v0.2.0).",
   "type": "object",
-  "required": ["specVersion", "meta", "profile"],
+  "required": ["$schema", "specVersion", "meta", "profile"],
   "additionalProperties": false,
   "properties": {
+    "$schema": { "type": "string", "format": "uri" },
     "specVersion": { "type": "string", "const": "0.2.0" },
     "meta": {
       "type": "object",
